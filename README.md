@@ -6,7 +6,7 @@ As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What f
 
 ### Getting the correct files
 
-Create a shell script with thse contents:
+Create a shell script called `updateTheFront.sh` with thse contents:
 
 ```bash
 #! /usr/bin/bash
@@ -33,6 +33,8 @@ You must change `$targetDir` to point at where you want the server to live.
 Run this script, and you should have a folder in the place specified as `$targetDir`.
 
 ### Starting the server
+
+Create a shell script called `theFront.sh` with these contents.
 
 ```bash
 #! /usr/bin/bash
@@ -93,7 +95,7 @@ This script will run the server with the info specified in the environment varia
 
 ### Keeping it running
 
-Create yet another shell script with these contents:
+Create yet another shell script called `startTheFront.sh` with these contents:
 
 ```bash
 #! /usr/bin/bash
