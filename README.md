@@ -6,7 +6,7 @@ As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What f
 
 ### Getting the correct files
 
-Create a shell script called `updateTheFront.sh` with thse contents:
+Create a shell script called `updateTheFront.sh` with these contents:
 
 ```bash
 #! /usr/bin/bash
