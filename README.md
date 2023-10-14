@@ -98,7 +98,7 @@ Create yet another shell script with these contents:
 ```bash
 #! /usr/bin/bash
 tmux new-session -d -s theFront -n front
-tmux send-keys -t theFront:front "/home/front/theFront.sh" Enter
+tmux send-keys -t theFront:front "$HOME/theFront.sh" Enter
 tmux attach -t theFront:front
 ```
 
