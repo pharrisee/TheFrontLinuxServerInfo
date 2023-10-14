@@ -2,7 +2,7 @@
 
 ## Installing
 
-As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.
+As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
 
 ### Getting the correct files
 
