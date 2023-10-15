@@ -17,7 +17,7 @@ Create a shell script called `updateTheFront.sh` with these contents:
 ```bash
 #! /usr/bin/bash
 
-export targetDir=$HOME/TheFrontServer
+export targetDir=$HOME/TheFrontServer # change this to be where you want the server to live
 
 # don't need manifestID as it seems to pick the latest manifest automatically
 
