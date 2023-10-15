@@ -1,122 +1,493 @@
-[BaseServerConfig]
-ServerName=PvP - open thecgn.ne
-ServerPassword=
-QueueThreshold=40
-ServerFightModeType=1
-IsCanSelfDamage=0
-IsCanFriendDamage=0
-ClearSeverTime=2023-10-11
-UseSteamSocket=1
-Port=5001
-BeaconPort=5002
-ShutDownServicePort=5003
-SaveWorldInterval=300
-GMOverlapRatio=1
-IsUnLockAllTalentAndRecipe=0
-GMBagInitGirdNum=40
-GreenHand=1
-CharacterInitItem=
-GMDeathDropMode=1
-GMDeathInventoryLifeSpan=1800
-CorpsePickAuthority=2
-GMCanDropItem=1
-GMCanDiscardItem=1
-GMDiscardBoxLifeSpan=300
-GMRebirthBaseCD=10
-GMRebirthExtraCD=1
-GMPenaltiesMaxNum=5
-GMPenaltiesCD=600
-ConstructEnableRot=1
-GMAttackCityCdRatio=1
-OpenAllHouseFlag=0
-IsCanChat=1
-IsShowBlood=1
-SensitiveWords=1
-HealthDyingState=1
-UseACE=1
-ServerAdminAccounts=76561197968306125
-IsShowGmTitle=0
-PlayerHotDefAddRate=1
-PlayerIceDefAddRate=1
-HeadNameDisplayDist_Team=200
-HeadNameDisplayDist_Enemy=20
-PlayerDeathAvatarItemDurableRate=0
-PlayerDeatShortcutItemDurableRate=0
-GMCraftTimeRate=1
-PlayerAddExpRate=1
-PlayerKillAddExpRate=1
-PlayerFarmAddExpRate=1
-PlayerCraftAddExpRate=1
-MoveSpeedRate=1
-JumpRate=1
-PlayerLandedDamageRate=1
-PlayerMaxHealthRate=1
-HealthRecoverRate=1
-PlayerMaxStaminaRate=1
-StaminaRecoverRate=1
-PlayerStaminaCostRate=1
-PlayerMaxHungerRate=1
-GMHungerDecRatio=1
-GMBodyHungerAddRate=1
-MaxBodyWaterRate=1
-GMWaterDecRatio=1
-GMBodyWaterAddRate=1
-MaxBreathRate=1
-BreathRecoverRate=1
-PlayerBreathCostRate=1
-GMPlayerHealthRate=1
-GMFoodDragDurationRate=1
-NpcRespawnRatio=1
-AnimalBodyStayTime=300
-HumanBodyStayTime=10
-GMNPCLootableItemRatio=2
-NpcSpawnLevelRatio=1
-WildNPCDamageRate=1
-WildNPCHealthRate=1
-WildNPCSpeedRate=1
-CityNPCLevelRate=1
-CityNPCDamageRate=1
-CityNPCHealthRate=1
-CityNPCSpeedRate=1
-CityNPCNumRate=1
-NpcDisplayDistance=50
-GMInventoryGainRate=1
-GMCityATKNPCLootItemRatio=1
-GMMaxHouseFlagNumber=1
-GMSetGJConstructMaxNumRatio=1
-GMHFTrapMaxNum=0
-GMHFTurretMaxNum=0
-GMConstructDefenseRatio=1
-GMTrapDefenseRatio=1
-GMTurretDefenseRatio=1
-GMTrapDamageRatio=1
-GMTurretDamageRatio=1
-GMConstructMaxHealthRatio=1
-GMConstructReturnHPRatio=1
-GMHouseFlagRepairHealthRatio=1
-GMTTC_Oil_Rate=1
-GMWaterCollecter_Rate=1
-GMTTC_Ore_Rate=1
-GMTTC_Fish_Rate=1
-CHFDamagedByPlayer=1
-CHFDamagedByVehicle=1
-CHFDamagedByNpc=1
-GMHouseFlagExcitantTime=3
-GMMaxRetrieveProductsRate=2
-GMTreeGainRate=2
-GMBushGainRate=2
-GMOreGainRate=2
-GMCropVegetableReapRatio=1
-GMFleshGainRate=1
-GMCropVegetableGrowRatio=1
-GMMeleeNpcDamageRatio=1
-GMRangedNpcDamageRatio=1
-GMMeleePlayerDamageRatio=1
-GMRangedPlayerDamageRatio=1
-GMMeleeConstructDamageRatio=1
-GMRangedConstructDamageRatio=1
-GMToolDamageRate=1
-GMDurabilityCostRatio=1
-GMVehiclePlayerDamageRatio=1
-GMVehicleConstructDamageRatio=1
-GMVehicleDamageRate=1
+# The Front Config options
+## can also be used as command parameters
+
+### [BaseServerConfig]
+#### ServerName
+
+```ServerName=Server name goes here```
+
+This is the text that shows in the server browser.
+
+#### ServerPassword
+
+```ServerPassword=```
+
+If you require a password for entry to the server, this is where it goes.
+
+#### QueueThreshold
+
+```QueueThreshold=40```
+
+
+
+#### ServerFightModeType
+
+```ServerFightModeType=1```
+
+#### IsCanSelfDamage
+
+```IsCanSelfDamage=0```
+
+#### IsCanFriendDamage
+
+```IsCanFriendDamage=0```
+
+#### ClearSeverTime
+
+```ClearSeverTime=2023-10-11```
+
+#### UseSteamSocket
+
+```UseSteamSocket=1```
+
+#### Port
+
+```Port=5001```
+
+#### BeaconPort
+
+```BeaconPort=5002```
+
+#### ShutDownServicePort
+
+```ShutDownServicePort=5003```
+
+#### SaveWorldInterval
+
+```SaveWorldInterval=300```
+
+#### GMOverlapRatio
+
+```GMOverlapRatio=1```
+
+#### IsUnLockAllTalentAndRecipe
+
+```IsUnLockAllTalentAndRecipe=0```
+
+#### GMBagInitGirdNum
+
+```GMBagInitGirdNum=40```
+
+#### GreenHand
+
+```GreenHand=1```
+
+#### CharacterInitItem
+
+```CharacterInitItem=```
+
+#### GMDeathDropMode
+
+```GMDeathDropMode=1```
+
+#### GMDeathInventoryLifeSpan
+
+```GMDeathInventoryLifeSpan=1800```
+
+#### CorpsePickAuthority
+
+```CorpsePickAuthority=2```
+
+#### GMCanDropItem
+
+```GMCanDropItem=1```
+
+#### GMCanDiscardItem
+
+```GMCanDiscardItem=1```
+
+#### GMDiscardBoxLifeSpan
+
+```GMDiscardBoxLifeSpan=300```
+
+#### GMRebirthBaseCD
+
+```GMRebirthBaseCD=10```
+
+#### GMRebirthExtraCD
+
+```GMRebirthExtraCD=1```
+
+#### GMPenaltiesMaxNum
+
+```GMPenaltiesMaxNum=5```
+
+#### GMPenaltiesCD
+
+```GMPenaltiesCD=600```
+
+#### ConstructEnableRot
+
+```ConstructEnableRot=1```
+
+#### GMAttackCityCdRatio
+
+```GMAttackCityCdRatio=1```
+
+#### OpenAllHouseFlag
+
+```OpenAllHouseFlag=0```
+
+#### IsCanChat
+
+```IsCanChat=1```
+
+#### IsShowBlood
+
+```IsShowBlood=1```
+
+#### SensitiveWords
+
+```SensitiveWords=1```
+
+#### HealthDyingState
+
+```HealthDyingState=1```
+
+#### UseACE
+
+```UseACE=1```
+
+#### ServerAdminAccounts
+
+```ServerAdminAccounts=7xxxxxxxxxxxxxxxx```
+
+#### IsShowGmTitle
+
+```IsShowGmTitle=0```
+
+#### PlayerHotDefAddRate
+
+```PlayerHotDefAddRate=1```
+
+#### PlayerIceDefAddRate
+
+```PlayerIceDefAddRate=1```
+
+#### HeadNameDisplayDist_Team
+
+```HeadNameDisplayDist_Team=200```
+
+#### HeadNameDisplayDist_Enemy
+
+```HeadNameDisplayDist_Enemy=20```
+
+#### PlayerDeathAvatarItemDurableRate
+
+```PlayerDeathAvatarItemDurableRate=0```
+
+#### PlayerDeatShortcutItemDurableRate
+
+```PlayerDeatShortcutItemDurableRate=0```
+
+#### GMCraftTimeRate
+
+```GMCraftTimeRate=1```
+
+#### PlayerAddExpRate
+
+```PlayerAddExpRate=1```
+
+#### PlayerKillAddExpRate
+
+```PlayerKillAddExpRate=1```
+
+#### PlayerFarmAddExpRate
+
+```PlayerFarmAddExpRate=1```
+
+#### PlayerCraftAddExpRate
+
+```PlayerCraftAddExpRate=1```
+
+#### MoveSpeedRate
+
+```MoveSpeedRate=1```
+
+#### JumpRate
+
+```JumpRate=1```
+
+#### PlayerLandedDamageRate
+
+```PlayerLandedDamageRate=1```
+
+#### PlayerMaxHealthRate
+
+```PlayerMaxHealthRate=1```
+
+#### HealthRecoverRate
+
+```HealthRecoverRate=1```
+
+#### PlayerMaxStaminaRate
+
+```PlayerMaxStaminaRate=1```
+
+#### StaminaRecoverRate
+
+```StaminaRecoverRate=1```
+
+#### PlayerStaminaCostRate
+
+```PlayerStaminaCostRate=1```
+
+#### PlayerMaxHungerRate
+
+```PlayerMaxHungerRate=1```
+
+#### GMHungerDecRatio
+
+```GMHungerDecRatio=1```
+
+#### GMBodyHungerAddRate
+
+```GMBodyHungerAddRate=1```
+
+#### MaxBodyWaterRate
+
+```MaxBodyWaterRate=1```
+
+#### GMWaterDecRatio
+
+```GMWaterDecRatio=1```
+
+#### GMBodyWaterAddRate
+
+```GMBodyWaterAddRate=1```
+
+#### MaxBreathRate
+
+```MaxBreathRate=1```
+
+#### BreathRecoverRate
+
+```BreathRecoverRate=1```
+
+#### PlayerBreathCostRate
+
+```PlayerBreathCostRate=1```
+
+#### GMPlayerHealthRate
+
+```GMPlayerHealthRate=1```
+
+#### GMFoodDragDurationRate
+
+```GMFoodDragDurationRate=1```
+
+#### NpcRespawnRatio
+
+```NpcRespawnRatio=1```
+
+#### AnimalBodyStayTime
+
+```AnimalBodyStayTime=300```
+
+#### HumanBodyStayTime
+
+```HumanBodyStayTime=10```
+
+#### GMNPCLootableItemRatio
+
+```GMNPCLootableItemRatio=2```
+
+#### NpcSpawnLevelRatio
+
+```NpcSpawnLevelRatio=1```
+
+#### WildNPCDamageRate
+
+```WildNPCDamageRate=1```
+
+#### WildNPCHealthRate
+
+```WildNPCHealthRate=1```
+
+#### WildNPCSpeedRate
+
+```WildNPCSpeedRate=1```
+
+#### CityNPCLevelRate
+
+```CityNPCLevelRate=1```
+
+#### CityNPCDamageRate
+
+```CityNPCDamageRate=1```
+
+#### CityNPCHealthRate
+
+```CityNPCHealthRate=1```
+
+#### CityNPCSpeedRate
+
+```CityNPCSpeedRate=1```
+
+#### CityNPCNumRate
+
+```CityNPCNumRate=1```
+
+#### NpcDisplayDistance
+
+```NpcDisplayDistance=50```
+
+#### GMInventoryGainRate
+
+```GMInventoryGainRate=1```
+
+#### GMCityATKNPCLootItemRatio
+
+```GMCityATKNPCLootItemRatio=1```
+
+#### GMMaxHouseFlagNumber
+
+```GMMaxHouseFlagNumber=1```
+
+#### GMSetGJConstructMaxNumRatio
+
+```GMSetGJConstructMaxNumRatio=1```
+
+#### GMHFTrapMaxNum
+
+```GMHFTrapMaxNum=0```
+
+#### GMHFTurretMaxNum
+
+```GMHFTurretMaxNum=0```
+
+#### GMConstructDefenseRatio
+
+```GMConstructDefenseRatio=1```
+
+#### GMTrapDefenseRatio
+
+```GMTrapDefenseRatio=1```
+
+#### GMTurretDefenseRatio
+
+```GMTurretDefenseRatio=1```
+
+#### GMTrapDamageRatio
+
+```GMTrapDamageRatio=1```
+
+#### GMTurretDamageRatio
+
+```GMTurretDamageRatio=1```
+
+#### GMConstructMaxHealthRatio
+
+```GMConstructMaxHealthRatio=1```
+
+#### GMConstructReturnHPRatio
+
+```GMConstructReturnHPRatio=1```
+
+#### GMHouseFlagRepairHealthRatio
+
+```GMHouseFlagRepairHealthRatio=1```
+
+#### GMTTC_Oil_Rate
+
+```GMTTC_Oil_Rate=1```
+
+#### GMWaterCollecter_Rate
+
+```GMWaterCollecter_Rate=1```
+
+#### GMTTC_Ore_Rate
+
+```GMTTC_Ore_Rate=1```
+
+#### GMTTC_Fish_Rate
+
+```GMTTC_Fish_Rate=1```
+
+#### CHFDamagedByPlayer
+
+```CHFDamagedByPlayer=1```
+
+#### CHFDamagedByVehicle
+
+```CHFDamagedByVehicle=1```
+
+#### CHFDamagedByNpc
+
+```CHFDamagedByNpc=1```
+
+#### GMHouseFlagExcitantTime
+
+```GMHouseFlagExcitantTime=3```
+
+#### GMMaxRetrieveProductsRate
+
+```GMMaxRetrieveProductsRate=2```
+
+#### GMTreeGainRate
+
+```GMTreeGainRate=2```
+
+#### GMBushGainRate
+
+```GMBushGainRate=2```
+
+#### GMOreGainRate
+
+```GMOreGainRate=2```
+
+#### GMCropVegetableReapRatio
+
+```GMCropVegetableReapRatio=1```
+
+#### GMFleshGainRate
+
+```GMFleshGainRate=1```
+
+#### GMCropVegetableGrowRatio
+
+```GMCropVegetableGrowRatio=1```
+
+#### GMMeleeNpcDamageRatio
+
+```GMMeleeNpcDamageRatio=1```
+
+#### GMRangedNpcDamageRatio
+
+```GMRangedNpcDamageRatio=1```
+
+#### GMMeleePlayerDamageRatio
+
+```GMMeleePlayerDamageRatio=1```
+
+#### GMRangedPlayerDamageRatio
+
+```GMRangedPlayerDamageRatio=1```
+
+#### GMMeleeConstructDamageRatio
+
+```GMMeleeConstructDamageRatio=1```
+
+#### GMRangedConstructDamageRatio
+
+```GMRangedConstructDamageRatio=1```
+
+#### GMToolDamageRate
+
+```GMToolDamageRate=1```
+
+#### GMDurabilityCostRatio
+
+```GMDurabilityCostRatio=1```
+
+#### GMVehiclePlayerDamageRatio
+
+```GMVehiclePlayerDamageRatio=1```
+
+#### GMVehicleConstructDamageRatio
+
+```GMVehicleConstructDamageRatio=1```
+
+#### GMVehicleDamageRate
+
+```GMVehicleDamageRate=1```
