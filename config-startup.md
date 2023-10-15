@@ -34,7 +34,7 @@ If you require a password for entry to the server, this is where it goes.
 
 ### IsCanFriendDamage
 
-* 0=Can't damage to friends
+* 0=Can't damage friends
 * 1=Can damage friends
 
 ```IsCanFriendDamage=0```
