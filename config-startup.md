@@ -215,9 +215,14 @@ How often does the world get saved.
 
 ### MoveSpeedRate
 
+How fast can the player run?  Seems to be whole integers only, evidence so far is that it cannot be a floating point number.
+
+
 ```MoveSpeedRate=1```
 
 ### JumpRate
+
+How high can the player jump?  Seems to be whole integers only, evidence so far is that it cannot be a floating point number.
 
 ```JumpRate=1```
 
