@@ -431,7 +431,7 @@ Multiplies growth speed of planted crops.
 
 ```GMSetCropGrowRate [multiplier]```
 
-# Player Beacon limit
+## Player Beacon limit
 Max number of Beacons each player can build.
 
 ```SetPlayerMaxHouseFlagNumber```
