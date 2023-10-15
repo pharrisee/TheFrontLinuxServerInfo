@@ -122,7 +122,7 @@ Multiplies character Cold RES.
 
 ```SetPlayerIceDefAddRate [multiplier]```
 
-# Friendly name display distance
+## Friendly name display distance
 Max distance at which you can see a squadmate's name (in meters)
 
 ```SetFriendDisplayDistance [distance (in meters)]```
