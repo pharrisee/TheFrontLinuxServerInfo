@@ -1,493 +1,506 @@
 # The Front Config options
 ## can also be used as command parameters
 
-### [BaseServerConfig]
-#### ServerName
+## [BaseServerConfig]
+### ServerName
 
-```ServerName=Server name goes here```
+```ServerName="Server name goes here"```
 
 This is the text that shows in the server browser.
 
-#### ServerPassword
+### ServerPassword
 
-```ServerPassword=```
+```ServerPassword="A SUPER SECRET PASSWORD"```
 
 If you require a password for entry to the server, this is where it goes.
 
-#### QueueThreshold
+### QueueThreshold
 
 ```QueueThreshold=40```
 
+### ServerFightModeType
 
-
-#### ServerFightModeType
+* 1=PVE
+* 0=PVP
 
 ```ServerFightModeType=1```
 
-#### IsCanSelfDamage
+### IsCanSelfDamage
+
+* 0=Can't damage to friends
+* 1=Can damage friends
 
 ```IsCanSelfDamage=0```
 
-#### IsCanFriendDamage
+### IsCanFriendDamage
+
+* 0=Can't damage to friends
+* 1=Can damage friends
 
 ```IsCanFriendDamage=0```
 
-#### ClearSeverTime
+### ClearSeverTime
+
+Date of next server wipe.  
+
+Must be in yyyy-mm-dd format.
 
 ```ClearSeverTime=2023-10-11```
 
-#### UseSteamSocket
+### UseSteamSocket
 
 ```UseSteamSocket=1```
 
-#### Port
+### Port
 
 ```Port=5001```
 
-#### BeaconPort
+### BeaconPort
 
 ```BeaconPort=5002```
 
-#### ShutDownServicePort
+### ShutDownServicePort
 
 ```ShutDownServicePort=5003```
 
-#### SaveWorldInterval
+### SaveWorldInterval
+
+How often does the world get saved.
 
 ```SaveWorldInterval=300```
 
-#### GMOverlapRatio
+### GMOverlapRatio
 
 ```GMOverlapRatio=1```
 
-#### IsUnLockAllTalentAndRecipe
+### IsUnLockAllTalentAndRecipe
 
 ```IsUnLockAllTalentAndRecipe=0```
 
-#### GMBagInitGirdNum
+### GMBagInitGirdNum
 
 ```GMBagInitGirdNum=40```
 
-#### GreenHand
+### GreenHand
 
 ```GreenHand=1```
 
-#### CharacterInitItem
+### CharacterInitItem
 
 ```CharacterInitItem=```
 
-#### GMDeathDropMode
+### GMDeathDropMode
 
 ```GMDeathDropMode=1```
 
-#### GMDeathInventoryLifeSpan
+### GMDeathInventoryLifeSpan
 
 ```GMDeathInventoryLifeSpan=1800```
 
-#### CorpsePickAuthority
+### CorpsePickAuthority
 
 ```CorpsePickAuthority=2```
 
-#### GMCanDropItem
+### GMCanDropItem
 
 ```GMCanDropItem=1```
 
-#### GMCanDiscardItem
+### GMCanDiscardItem
 
 ```GMCanDiscardItem=1```
 
-#### GMDiscardBoxLifeSpan
+### GMDiscardBoxLifeSpan
 
 ```GMDiscardBoxLifeSpan=300```
 
-#### GMRebirthBaseCD
+### GMRebirthBaseCD
 
 ```GMRebirthBaseCD=10```
 
-#### GMRebirthExtraCD
+### GMRebirthExtraCD
 
 ```GMRebirthExtraCD=1```
 
-#### GMPenaltiesMaxNum
+### GMPenaltiesMaxNum
 
 ```GMPenaltiesMaxNum=5```
 
-#### GMPenaltiesCD
+### GMPenaltiesCD
 
 ```GMPenaltiesCD=600```
 
-#### ConstructEnableRot
+### ConstructEnableRot
 
 ```ConstructEnableRot=1```
 
-#### GMAttackCityCdRatio
+### GMAttackCityCdRatio
 
 ```GMAttackCityCdRatio=1```
 
-#### OpenAllHouseFlag
+### OpenAllHouseFlag
 
 ```OpenAllHouseFlag=0```
 
-#### IsCanChat
+### IsCanChat
 
 ```IsCanChat=1```
 
-#### IsShowBlood
+### IsShowBlood
 
 ```IsShowBlood=1```
 
-#### SensitiveWords
+### SensitiveWords
 
 ```SensitiveWords=1```
 
-#### HealthDyingState
+### HealthDyingState
 
 ```HealthDyingState=1```
 
-#### UseACE
+### UseACE
 
 ```UseACE=1```
 
-#### ServerAdminAccounts
+### ServerAdminAccounts
 
 ```ServerAdminAccounts=7xxxxxxxxxxxxxxxx```
 
-#### IsShowGmTitle
+### IsShowGmTitle
 
 ```IsShowGmTitle=0```
 
-#### PlayerHotDefAddRate
+### PlayerHotDefAddRate
 
 ```PlayerHotDefAddRate=1```
 
-#### PlayerIceDefAddRate
+### PlayerIceDefAddRate
 
 ```PlayerIceDefAddRate=1```
 
-#### HeadNameDisplayDist_Team
+### HeadNameDisplayDist_Team
 
 ```HeadNameDisplayDist_Team=200```
 
-#### HeadNameDisplayDist_Enemy
+### HeadNameDisplayDist_Enemy
 
 ```HeadNameDisplayDist_Enemy=20```
 
-#### PlayerDeathAvatarItemDurableRate
+### PlayerDeathAvatarItemDurableRate
 
 ```PlayerDeathAvatarItemDurableRate=0```
 
-#### PlayerDeatShortcutItemDurableRate
+### PlayerDeatShortcutItemDurableRate
 
 ```PlayerDeatShortcutItemDurableRate=0```
 
-#### GMCraftTimeRate
+### GMCraftTimeRate
 
 ```GMCraftTimeRate=1```
 
-#### PlayerAddExpRate
+### PlayerAddExpRate
 
 ```PlayerAddExpRate=1```
 
-#### PlayerKillAddExpRate
+### PlayerKillAddExpRate
 
 ```PlayerKillAddExpRate=1```
 
-#### PlayerFarmAddExpRate
+### PlayerFarmAddExpRate
 
 ```PlayerFarmAddExpRate=1```
 
-#### PlayerCraftAddExpRate
+### PlayerCraftAddExpRate
 
 ```PlayerCraftAddExpRate=1```
 
-#### MoveSpeedRate
+### MoveSpeedRate
 
 ```MoveSpeedRate=1```
 
-#### JumpRate
+### JumpRate
 
 ```JumpRate=1```
 
-#### PlayerLandedDamageRate
+### PlayerLandedDamageRate
 
 ```PlayerLandedDamageRate=1```
 
-#### PlayerMaxHealthRate
+### PlayerMaxHealthRate
 
 ```PlayerMaxHealthRate=1```
 
-#### HealthRecoverRate
+### HealthRecoverRate
 
 ```HealthRecoverRate=1```
 
-#### PlayerMaxStaminaRate
+### PlayerMaxStaminaRate
 
 ```PlayerMaxStaminaRate=1```
 
-#### StaminaRecoverRate
+### StaminaRecoverRate
 
 ```StaminaRecoverRate=1```
 
-#### PlayerStaminaCostRate
+### PlayerStaminaCostRate
 
 ```PlayerStaminaCostRate=1```
 
-#### PlayerMaxHungerRate
+### PlayerMaxHungerRate
 
 ```PlayerMaxHungerRate=1```
 
-#### GMHungerDecRatio
+### GMHungerDecRatio
 
 ```GMHungerDecRatio=1```
 
-#### GMBodyHungerAddRate
+### GMBodyHungerAddRate
 
 ```GMBodyHungerAddRate=1```
 
-#### MaxBodyWaterRate
+### MaxBodyWaterRate
 
 ```MaxBodyWaterRate=1```
 
-#### GMWaterDecRatio
+### GMWaterDecRatio
 
 ```GMWaterDecRatio=1```
 
-#### GMBodyWaterAddRate
+### GMBodyWaterAddRate
 
 ```GMBodyWaterAddRate=1```
 
-#### MaxBreathRate
+### MaxBreathRate
 
 ```MaxBreathRate=1```
 
-#### BreathRecoverRate
+### BreathRecoverRate
 
 ```BreathRecoverRate=1```
 
-#### PlayerBreathCostRate
+### PlayerBreathCostRate
 
 ```PlayerBreathCostRate=1```
 
-#### GMPlayerHealthRate
+### GMPlayerHealthRate
 
 ```GMPlayerHealthRate=1```
 
-#### GMFoodDragDurationRate
+### GMFoodDragDurationRate
 
 ```GMFoodDragDurationRate=1```
 
-#### NpcRespawnRatio
+### NpcRespawnRatio
 
 ```NpcRespawnRatio=1```
 
-#### AnimalBodyStayTime
+### AnimalBodyStayTime
 
 ```AnimalBodyStayTime=300```
 
-#### HumanBodyStayTime
+### HumanBodyStayTime
 
 ```HumanBodyStayTime=10```
 
-#### GMNPCLootableItemRatio
+### GMNPCLootableItemRatio
 
 ```GMNPCLootableItemRatio=2```
 
-#### NpcSpawnLevelRatio
+### NpcSpawnLevelRatio
 
 ```NpcSpawnLevelRatio=1```
 
-#### WildNPCDamageRate
+### WildNPCDamageRate
 
 ```WildNPCDamageRate=1```
 
-#### WildNPCHealthRate
+### WildNPCHealthRate
 
 ```WildNPCHealthRate=1```
 
-#### WildNPCSpeedRate
+### WildNPCSpeedRate
 
 ```WildNPCSpeedRate=1```
 
-#### CityNPCLevelRate
+### CityNPCLevelRate
 
 ```CityNPCLevelRate=1```
 
-#### CityNPCDamageRate
+### CityNPCDamageRate
 
 ```CityNPCDamageRate=1```
 
-#### CityNPCHealthRate
+### CityNPCHealthRate
 
 ```CityNPCHealthRate=1```
 
-#### CityNPCSpeedRate
+### CityNPCSpeedRate
 
 ```CityNPCSpeedRate=1```
 
-#### CityNPCNumRate
+### CityNPCNumRate
 
 ```CityNPCNumRate=1```
 
-#### NpcDisplayDistance
+### NpcDisplayDistance
 
 ```NpcDisplayDistance=50```
 
-#### GMInventoryGainRate
+### GMInventoryGainRate
 
 ```GMInventoryGainRate=1```
 
-#### GMCityATKNPCLootItemRatio
+### GMCityATKNPCLootItemRatio
 
 ```GMCityATKNPCLootItemRatio=1```
 
-#### GMMaxHouseFlagNumber
+### GMMaxHouseFlagNumber
 
 ```GMMaxHouseFlagNumber=1```
 
-#### GMSetGJConstructMaxNumRatio
+### GMSetGJConstructMaxNumRatio
 
 ```GMSetGJConstructMaxNumRatio=1```
 
-#### GMHFTrapMaxNum
+### GMHFTrapMaxNum
 
 ```GMHFTrapMaxNum=0```
 
-#### GMHFTurretMaxNum
+### GMHFTurretMaxNum
 
 ```GMHFTurretMaxNum=0```
 
-#### GMConstructDefenseRatio
+### GMConstructDefenseRatio
 
 ```GMConstructDefenseRatio=1```
 
-#### GMTrapDefenseRatio
+### GMTrapDefenseRatio
 
 ```GMTrapDefenseRatio=1```
 
-#### GMTurretDefenseRatio
+### GMTurretDefenseRatio
 
 ```GMTurretDefenseRatio=1```
 
-#### GMTrapDamageRatio
+### GMTrapDamageRatio
 
 ```GMTrapDamageRatio=1```
 
-#### GMTurretDamageRatio
+### GMTurretDamageRatio
 
 ```GMTurretDamageRatio=1```
 
-#### GMConstructMaxHealthRatio
+### GMConstructMaxHealthRatio
 
 ```GMConstructMaxHealthRatio=1```
 
-#### GMConstructReturnHPRatio
+### GMConstructReturnHPRatio
 
 ```GMConstructReturnHPRatio=1```
 
-#### GMHouseFlagRepairHealthRatio
+### GMHouseFlagRepairHealthRatio
 
 ```GMHouseFlagRepairHealthRatio=1```
 
-#### GMTTC_Oil_Rate
+### GMTTC_Oil_Rate
 
 ```GMTTC_Oil_Rate=1```
 
-#### GMWaterCollecter_Rate
+### GMWaterCollecter_Rate
 
 ```GMWaterCollecter_Rate=1```
 
-#### GMTTC_Ore_Rate
+### GMTTC_Ore_Rate
 
 ```GMTTC_Ore_Rate=1```
 
-#### GMTTC_Fish_Rate
+### GMTTC_Fish_Rate
 
 ```GMTTC_Fish_Rate=1```
 
-#### CHFDamagedByPlayer
+### CHFDamagedByPlayer
 
 ```CHFDamagedByPlayer=1```
 
-#### CHFDamagedByVehicle
+### CHFDamagedByVehicle
 
 ```CHFDamagedByVehicle=1```
 
-#### CHFDamagedByNpc
+### CHFDamagedByNpc
 
 ```CHFDamagedByNpc=1```
 
-#### GMHouseFlagExcitantTime
+### GMHouseFlagExcitantTime
 
 ```GMHouseFlagExcitantTime=3```
 
-#### GMMaxRetrieveProductsRate
+### GMMaxRetrieveProductsRate
 
 ```GMMaxRetrieveProductsRate=2```
 
-#### GMTreeGainRate
+### GMTreeGainRate
 
 ```GMTreeGainRate=2```
 
-#### GMBushGainRate
+### GMBushGainRate
 
 ```GMBushGainRate=2```
 
-#### GMOreGainRate
+### GMOreGainRate
 
 ```GMOreGainRate=2```
 
-#### GMCropVegetableReapRatio
+### GMCropVegetableReapRatio
 
 ```GMCropVegetableReapRatio=1```
 
-#### GMFleshGainRate
+### GMFleshGainRate
 
 ```GMFleshGainRate=1```
 
-#### GMCropVegetableGrowRatio
+### GMCropVegetableGrowRatio
 
 ```GMCropVegetableGrowRatio=1```
 
-#### GMMeleeNpcDamageRatio
+### GMMeleeNpcDamageRatio
 
 ```GMMeleeNpcDamageRatio=1```
 
-#### GMRangedNpcDamageRatio
+### GMRangedNpcDamageRatio
 
 ```GMRangedNpcDamageRatio=1```
 
-#### GMMeleePlayerDamageRatio
+### GMMeleePlayerDamageRatio
 
 ```GMMeleePlayerDamageRatio=1```
 
-#### GMRangedPlayerDamageRatio
+### GMRangedPlayerDamageRatio
 
 ```GMRangedPlayerDamageRatio=1```
 
-#### GMMeleeConstructDamageRatio
+### GMMeleeConstructDamageRatio
 
 ```GMMeleeConstructDamageRatio=1```
 
-#### GMRangedConstructDamageRatio
+### GMRangedConstructDamageRatio
 
 ```GMRangedConstructDamageRatio=1```
 
-#### GMToolDamageRate
+### GMToolDamageRate
 
 ```GMToolDamageRate=1```
 
-#### GMDurabilityCostRatio
+### GMDurabilityCostRatio
 
 ```GMDurabilityCostRatio=1```
 
-#### GMVehiclePlayerDamageRatio
+### GMVehiclePlayerDamageRatio
 
 ```GMVehiclePlayerDamageRatio=1```
 
-#### GMVehicleConstructDamageRatio
+### GMVehicleConstructDamageRatio
 
 ```GMVehicleConstructDamageRatio=1```
 
-#### GMVehicleDamageRate
+### GMVehicleDamageRate
 
 ```GMVehicleDamageRate=1```
