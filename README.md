@@ -41,7 +41,7 @@ Create a shell script called `theFront.sh` with these contents.
 
 export USERDIR=$HOME/TheFrontServerData
 export SERVERDIR=$HOME/TheFrontServer
-export SERVERNAME="Undying Hunger"
+export SERVERNAME="Server Name goes here"
 # can have multiple admins, separate them by ';'
 # these are steamids
 export ADMINIDS=7xxxxxxxxxxxxxxxx
