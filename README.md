@@ -1,5 +1,11 @@
 # Running The Front Linux server
 
+## BEWARE, HERE BE DRAGONS
+
+The files below work for me, I'm not saying they'll work for you but they might, or they might give you ideas... who knows.
+
+If you use these and your server breaks well such is life, don't copy/paste things you find on t'intarmawebs.
+
 ## Installing
 
 As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
