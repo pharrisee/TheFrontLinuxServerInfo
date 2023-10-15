@@ -42,6 +42,7 @@ Create a shell script called `theFront.sh` with these contents.
 export USERDIR=$HOME/TheFrontServerData
 export SERVERDIR=$HOME/TheFrontServer
 export SERVERNAME="Server Name goes here"
+export SERVERTITLE="For old people by old people!"
 # can have multiple admins, separate them by ';'
 # these are steamids
 export ADMINIDS=7xxxxxxxxxxxxxxxx
@@ -87,7 +88,8 @@ cd $SERVERDIR
     -SensitiveWords=true \
     -UseACE=true \
     -ClearServerTime=$SERVERWIPEDATE \
-    -UserDir=$USERDIR
+    -UserDir=$USERDIR \
+    -ServerTitle="$SERVERTITLE"
 
 ```
 
