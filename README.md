@@ -38,7 +38,7 @@ cp -rv $HOME/.local/share/Steam/steamcmd/linux32/steamapps/content/app_2334200/d
 
 You must change `$SERVERDIR` to point at where you want the server to live.
 
-Run this script, and you should have a folder in the place specified as `$targetDir`.
+Run this script, and you should have a folder in the place specified as `$SERVERDIR`.
 
 ### Starting the server
 
@@ -48,7 +48,7 @@ Create a shell script called `theFront.sh` with these contents.
 #! /usr/bin/bash
 
 export SAVEDIR=$HOME/TheFrontServerData
-export SERVERDIR=$HOME/TheFrontServer # same as targetDir in the previous script
+export SERVERDIR=$HOME/TheFrontServer # same as SERVERDIR in the previous script
 export SERVERNAME="Server Name goes here"
 export SERVERTITLE="For old people by old people!"
 # can have multiple admins, separate them by ';'
