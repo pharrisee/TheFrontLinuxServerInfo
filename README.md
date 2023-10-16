@@ -10,6 +10,8 @@ If you use these and your server breaks well such is life, don't copy/paste thin
 
 As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
 
+The real reason for this is that the depot for the Linux Server (2334201) is marked as a Windows depot rather than a Linux one, so the app_update command doesn't correctly get the files.
+
 ### Getting the correct files
 
 Create a shell script called `updateTheFront.sh` with these contents:
