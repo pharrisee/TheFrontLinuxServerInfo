@@ -17,7 +17,7 @@ Create a shell script called `updateTheFront.sh` with these contents:
 ```bash
 #! /usr/bin/bash
 
-export targetDir=$HOME/TheFrontServer # change this to be where you want the server to live
+export SERVERDIR=$HOME/TheFrontServer # change this to be where you want the server to live
 
 # don't need manifestID as it seems to pick the latest manifest automatically
 
@@ -26,15 +26,15 @@ echo "Downloading The Front Linux Server files..."
 steamcmd +login anonymous +download_depot 2334200 2334201 +quit
 
 # make the target directory, if not exists
-echo "Creating $targetDir..."
-mkdir -p $targetDir
+echo "Creating $SERVERDIR..."
+mkdir -p $SERVERDIR
 
 # copy the files from the depot to the target directory
-echo "Copying files to $targetDir..."
-cp -rv $HOME/.local/share/Steam/steamcmd/linux32/steamapps/content/app_2334200/depot_2334201/* $targetDir
+echo "Copying files to $SERVERDIR..."
+cp -rv $HOME/.local/share/Steam/steamcmd/linux32/steamapps/content/app_2334200/depot_2334201/* $SERVERDIR
 ```
 
-You must change `$targetDir` to point at where you want the server to live.
+You must change `$SERVERDIR` to point at where you want the server to live.
 
 Run this script, and you should have a folder in the place specified as `$targetDir`.
 
@@ -45,7 +45,7 @@ Create a shell script called `theFront.sh` with these contents.
 ```bash
 #! /usr/bin/bash
 
-export USERDIR=$HOME/TheFrontServerData
+export SAVEDIR=$HOME/TheFrontServerData
 export SERVERDIR=$HOME/TheFrontServer # same as targetDir in the previous script
 export SERVERNAME="Server Name goes here"
 export SERVERTITLE="For old people by old people!"
@@ -56,7 +56,7 @@ export IPADDRESS=31.x.x.x
 export SERVERPASSWORD="a secret password goes here"
 export SERVERWIPEDATE=2023-10-20
                     
-mkdir -p $USERDIR
+mkdir -p $SAVEDIR
 
 # change to the server folder specifed above
 cd $SERVERDIR
@@ -94,7 +94,7 @@ cd $SERVERDIR
     -SensitiveWords=true \
     -UseACE=true \
     -ClearSeverTime=$SERVERWIPEDATE \
-    -UserDir=$USERDIR \
+    -SAVEDIR=$SAVEDIR \
     -ServerTitle="$SERVERTITLE" \
 
 ```
