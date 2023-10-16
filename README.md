@@ -97,8 +97,7 @@ cd $SERVERDIR
     -UseACE=true \
     -ClearServerTime=$SERVERWIPEDATE \
     -UserDir=$SAVEDIR \
-    -ServerTitle="$SERVERTITLE" \
-    -ServerPassword="$SERVERPASSWORD"
+    -ServerTitle="$SERVERTITLE" 
 
 ```
 
