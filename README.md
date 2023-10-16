@@ -100,7 +100,7 @@ cd $SERVERDIR
     -ServerTitle="$SERVERTITLE" 
 
 ```
-#### <font color="red">Important</font>
+#### $${\color{red}Important}$$
 
 If you don't require a password on your server then you **MUST** completely remove the `-ServerPassword` line.  Passing an empty password to the server will **NOT** allow logins.
 
