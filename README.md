@@ -95,7 +95,7 @@ cd $SERVERDIR
     -GreenHand=true \
     -SensitiveWords=true \
     -UseACE=true \
-    -ClearSeverTime=$SERVERWIPEDATE \
+    -ClearServerTime=$SERVERWIPEDATE \
     -UserDir=$SAVEDIR \
     -ServerTitle="$SERVERTITLE" \
 
