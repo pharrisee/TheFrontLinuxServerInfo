@@ -103,7 +103,7 @@ cd $SERVERDIR
 
 This script will run the server with the info specified in the environment variables at the top of the script.  However it will stop when you log out and that's not much use eh?
 
-If you don't require a password on your server then you *MUST* completely remove the `-ServerPassword` line and the `\` on the line above.
+If you don't require a password on your server then you *MUST* completely remove the `-ServerPassword` line.  Passing an empty password to the server will *NOT* allow logins.
 
 ### Keeping it running
 
