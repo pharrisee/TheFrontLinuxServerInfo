@@ -96,7 +96,7 @@ cd $SERVERDIR
     -SensitiveWords=true \
     -UseACE=true \
     -ClearSeverTime=$SERVERWIPEDATE \
-    -SAVEDIR=$SAVEDIR \
+    -UserDir=$SAVEDIR \
     -ServerTitle="$SERVERTITLE" \
 
 ```
