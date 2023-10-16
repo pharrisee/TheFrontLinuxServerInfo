@@ -36,9 +36,9 @@ echo "Copying files to $SERVERDIR..."
 cp -rv $HOME/.local/share/Steam/steamcmd/linux32/steamapps/content/app_2334200/depot_2334201/* $SERVERDIR
 ```
 
-You must change `$SERVERDIR` to point at where you want the server to live.
+You must change `$SERVERDIR` to point at where you want the server to live.  The actual place doesn't have to be within the normal structure of a Steam install, I prefer to keep mine separate as the game doesn't care too much where it is.
 
-Run this script, and you should have a folder in the place specified as `$SERVERDIR`.
+Run this script, and you should have a folder in the place specified as `$SERVERDIR` containing the game files.
 
 ### Starting the server
 
