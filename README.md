@@ -121,4 +121,4 @@ tmux attach -t theFront:front
 
 This will start the server in tmux (a terminal multiplexer), you can find information about it [in the tmux wiki](https://github.com/tmux/tmux/wiki).
 
-When logging out, use the `Ctrl-B D` command rather than Ctrl-C, Ctrl-C will stop the server.
+When logging out, use the `Ctrl-B D` command ti detach from the tmux session, rather than Ctrl-C which will stop the server.
