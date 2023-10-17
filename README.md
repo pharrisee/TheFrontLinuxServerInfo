@@ -123,3 +123,19 @@ This will start the server in tmux (a terminal multiplexer), you can find inform
 When logging out, use the `Ctrl-B D` command to detach from the tmux session, rather than Ctrl-C which will stop the server.
 
 When you ssh into the server next time, just run tmux attach to re-attach to the running session.
+
+
+### Configuration
+
+Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.
+
+Customize this with variables to get the server how you'd like it.
+
+For example, to set the `PlayerAddExpRate` add this line in the ServerConfig_.ini file, like so:
+
+```ini
+[BaseServerConfig]
+IsCanMail=1.000000
+PlayerAddExpRate=1.500000
+```
+
