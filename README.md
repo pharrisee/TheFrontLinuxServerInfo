@@ -53,7 +53,7 @@ export SERVERNAME="Server Name goes here"
 export SERVERTITLE="For old people by old people!"
 # can have multiple admins, separate them by ';'
 # these are steamids
-export ADMINIDS=7xxxxxxxxxxxxxxxx
+export ADMINIDS="7xxxxxxxxxxxxxxxx"
 export IPADDRESS=31.x.x.x
 export SERVERPASSWORD="a secret password goes here"
 export SERVERWIPEDATE=2023-10-20
