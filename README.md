@@ -69,7 +69,7 @@ cd $SERVERDIR
     -server \
     -game -QueueThreshold=8 \
     -ServerName="$SERVERNAME" \
-    -ServerAdminAccounts=$AdminSteamID \
+    -ServerAdminAccounts=$ADMINIDS \
     -log -locallogtimes \
     -EnableParallelCharacterMovementTickFunction \
     -EnableParallelCharacterTickFunction \
