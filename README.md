@@ -88,7 +88,6 @@ cd $SERVERDIR
     -IsCanSelfDamage=true \
     -IsCanFriendDamage=true \
     -fullcrashdumpalways \
-    -Game.PhysicsVehicle=false \
     -MaxQueueSize=2 \
     -QueueValidTime=60 \
     -SaveWorldInterval=300 \
