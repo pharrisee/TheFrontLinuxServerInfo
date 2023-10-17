@@ -79,7 +79,7 @@ cd $SERVERDIR
     -port=5001 \
     -BeaconPort=5002 \
     -QueryPort=5003 \
-    -Game.PhysicsVehicle=false \
+    -Game.PhysicsVehicle=true \
     -ansimalloc \
     -Game.MaxFrameRate=35 \
     -ShutDownServicePort=5004 \
