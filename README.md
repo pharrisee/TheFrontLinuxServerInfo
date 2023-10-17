@@ -1,5 +1,11 @@
 # Running The Front Linux server
 
+1. [BEWARE, HERE BE DRAGONS](#beware-here-be-dragons)
+1. [Installing](#installing)
+1. [Starting the server](#starting-the-server)
+1. [Keeping it running](#keeping-it-running)
+1. [Configuration](#configuration)
+
 ## BEWARE, HERE BE DRAGONS
 
 The files below work for me, I'm not saying they'll work for you but they might, or they might give you ideas... who knows.
