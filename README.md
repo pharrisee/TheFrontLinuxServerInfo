@@ -8,9 +8,13 @@
 
 ## BEWARE, HERE BE DRAGONS
 
-The files below work for me, I'm not saying they'll work for you but they might, or they might give you ideas... who knows.
+**PLEASE READ THIS BIT CAREFULLY**
+
+This repo is purely for my benefit, the files below work for me, I'm not saying they'll work for you but they might or they might give you ideas... who knows.
 
 If you use these and your server breaks well such is life, don't copy/paste things you find on t'intarmawebs.
+
+Support for these files is limited, if you don't understand them or how to fix things then there was this thing invented a while ago that sort of allows you to look around the t'intarmawebs and find information, amazing thing.  It's called Google, search for it and use it.
 
 ## Installing
 
