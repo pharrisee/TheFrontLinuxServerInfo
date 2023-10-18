@@ -24,6 +24,8 @@ As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What f
 
 The real reason for this is that the depot for the Linux Server (2334201) is marked as a Windows depot rather than a Linux one, so the `app_update` command doesn't correctly get the files.
 
+It seems there is a way to force `steamcmd` to download the correct files by using this `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.
+
 ### Getting the correct files
 
 Create a shell script called `updateTheFront.sh` with these contents:
@@ -37,15 +39,8 @@ export SERVERDIR=$HOME/TheFrontServer # change this to be where you want the ser
 
 # download the depot 2334201 (The Front Linux Server)
 echo "Downloading The Front Linux Server files..."
-steamcmd +login anonymous +download_depot 2334200 2334201 +quit
+steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir $SERVERDIR +login anonymous +app_update 2334200 +quit
 
-# make the target directory, if not exists
-echo "Creating $SERVERDIR..."
-mkdir -p $SERVERDIR
-
-# copy the files from the depot to the target directory
-echo "Copying files to $SERVERDIR..."
-cp -rv $HOME/.local/share/Steam/steamcmd/linux32/steamapps/content/app_2334200/depot_2334201/* $SERVERDIR
 ```
 
 You must change `$SERVERDIR` to point at where you want the server to live.  The actual place doesn't have to be within the normal structure of a Steam install, I prefer to keep mine separate as the game doesn't care too much where it is.
