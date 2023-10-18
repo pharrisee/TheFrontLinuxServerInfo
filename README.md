@@ -35,9 +35,6 @@ Create a shell script called `updateTheFront.sh` with these contents:
 
 export SERVERDIR=$HOME/TheFrontServer # change this to be where you want the server to live
 
-# don't need manifestID as it seems to pick the latest manifest automatically
-
-# download the depot 2334201 (The Front Linux Server)
 echo "Downloading The Front Linux Server files..."
 steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir $SERVERDIR +login anonymous +app_update 2334200 +quit
 
