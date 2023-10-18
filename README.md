@@ -16,6 +16,8 @@ If you use these and your server breaks well such is life, don't copy/paste thin
 
 Support for these files is limited, if you don't understand them or how to fix things then there was this thing invented a while ago that sort of allows you to look around the t'intarmawebs and find information, amazing thing.  It's called Google, search for it and use it.
 
+I'll help if I can, but don't expect issues and questions answered with any sort of timeliness.
+
 ## Installing
 
 As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
