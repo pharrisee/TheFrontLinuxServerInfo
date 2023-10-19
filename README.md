@@ -131,7 +131,12 @@ When you ssh into the server next time, just run tmux attach to re-attach to the
 
 ### Configuration
 
-Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.
+Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.  If $SERVERDIR/TheFrontManager doesn't exist then create that folder and run this command to create the file required:
+
+```bash
+echo '[BaseServerConfig]
+IsCanMail=1' > ServerConfig_.ini
+```
 
 Customize this with variables to get the server how you'd like it.
 
