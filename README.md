@@ -148,3 +148,4 @@ IsCanMail=1.000000
 PlayerAddExpRate=1.500000
 ```
 
+See [the admin tools spreadsheet](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=1734331083) for more config items.
