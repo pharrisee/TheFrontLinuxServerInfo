@@ -126,7 +126,7 @@ This will start the server in tmux (a terminal multiplexer), you can find inform
 
 When logging out, use the `Ctrl-B D` command to detach from the tmux session, rather than Ctrl-C which will stop the server.
 
-When you ssh into the server next time, just run tmux attach to re-attach to the running session.
+When you ssh into the server next time, just run `tmux attach` to re-attach to the running session.
 
 
 ### Configuration
