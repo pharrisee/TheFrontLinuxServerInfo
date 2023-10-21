@@ -5,6 +5,7 @@
 1. [Starting the server](#starting-the-server)
 1. [Keeping it running](#keeping-it-running)
 1. [Configuration](#configuration)
+1. [Wiping the server](#wiping-the-server)
 
 ## BEWARE, HERE BE DRAGONS
 
