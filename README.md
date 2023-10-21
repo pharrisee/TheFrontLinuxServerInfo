@@ -155,7 +155,7 @@ To completely wipe the server you need to remove the files listed below:
 
 ```bash
 $SAVEDIR/Saved/ListenServer/
-$SAVEDIR/Saved/Logs/ (Unles you want to keep them)
+$SAVEDIR/Saved/Logs/ 
 $SAVEDIR/Saved/GameStates/Accounts/Accounts.csv
 $SAVEDIR/Saved/GameStates/Accounts/Accounts.csv.back
 $SAVEDIR/Saved/GameStates/Accounts/NickNames.csv
@@ -165,6 +165,9 @@ $SAVEDIR/Saved/GameStates/Players/
 $SAVEDIR/Saved/GameStates/ConstructData.sav
 $SAVEDIR/Saved/GameStates/GuildData.sav 
 ```
+
+You can leave the logs, or move them out of the way, if you want a record of them.
+
 You might be able to get away with keeping GuildData.sav if you want to keep squads, not tested thoroughly.
 
 The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
