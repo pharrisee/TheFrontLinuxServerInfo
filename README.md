@@ -126,12 +126,17 @@ This will start the server in tmux (a terminal multiplexer), you can find inform
 
 When logging out, use the `Ctrl-B D` command to detach from the tmux session, rather than Ctrl-C which will stop the server.
 
-When you ssh into the server next time, just run tmux attach to re-attach to the running session.
+When you ssh into the server next time, just run `tmux attach` to re-attach to the running session.
 
 
 ### Configuration
 
-Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.
+Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.  If $SERVERDIR/TheFrontManager doesn't exist then create that folder and run this command to create the file required:
+
+```bash
+echo '[BaseServerConfig]
+IsCanMail=1' > ServerConfig_.ini
+```
 
 Customize this with variables to get the server how you'd like it.
 
@@ -157,8 +162,9 @@ $SAVEDIR/Saved/GameStates/DeletedPlayers/
 $SAVEDIR/Saved/GameStates/Worlds/
 $SAVEDIR/Saved/GameStates/Players/
 $SAVEDIR/Saved/GameStates/ConstructData.sav
-$SAVEDIR/Saved/GameStates/GuildData.sav #(You might be able to get away with keeping this if you want to keep squads, have not tested)
+$SAVEDIR/Saved/GameStates/GuildData.sav 
 ```
+You might be able to get away with keeping GuildData.sav if you want to keep squads, not tested thoroughly.
 
 The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
 
