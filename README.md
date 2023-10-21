@@ -143,3 +143,23 @@ IsCanMail=1.000000
 PlayerAddExpRate=1.500000
 ```
 
+### Wiping the server
+
+To completely wipe the server you need to remove the files listed below:
+
+```bash
+$SAVEDIR/Saved/ListenServer/
+$SAVEDIR/Saved/Logs/ (Unles you want to keep them)
+$SAVEDIR/Saved/GameStates/Accounts/Accounts.csv
+$SAVEDIR/Saved/GameStates/Accounts/Accounts.csv.back
+$SAVEDIR/Saved/GameStates/Accounts/NickNames.csv
+$SAVEDIR/Saved/GameStates/DeletedPlayers/
+$SAVEDIR/Saved/GameStates/Worlds/
+$SAVEDIR/Saved/GameStates/Players/
+$SAVEDIR/Saved/GameStates/ConstructData.sav
+$SAVEDIR/Saved/GameStates/GuildData.sav #(You might be able to get away with keeping this if you want to keep squads, have not tested)
+```
+
+The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
+
+Thanks to ScareCr0w12 for this information on wipes.
