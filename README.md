@@ -110,6 +110,24 @@ cd $SERVERDIR
 
 If you don't require a password on your server then you **MUST** completely remove the `-ServerPassword` line.  Passing an empty password to the server will prompt for a password that you can't enter and will stop **all** logins.
 
+#### Running on a network using NAT (P2P)
+
+If you are running this on a local (at home) computer, then you need to change the start script slightly.
+
+Change your equivalent of this line:
+
+`ProjectWar_Start?DedicatedServer?MaxPlayers=8?`
+
+to something like this:
+
+Steam:
+`ProjectWar_Start?DedicatedServer?MaxPlayers=8?udrs=steam` 
+
+Epic:
+`ProjectWar_Start?DedicatedServer?MaxPlayers=8?udrs=eos`
+
+
+
 #### Finally
 
 This script will run the server with the info specified in the environment variables at the top of the script.  However it will stop when you log out and that's not much use eh?
