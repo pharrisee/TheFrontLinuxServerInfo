@@ -6,6 +6,8 @@
 1. [Keeping it running](#keeping-it-running)
 1. [Configuration](#configuration)
 1. [Wiping the server](#wiping-the-server)
+1. [Admin Commands](gm-commands.md)
+1. [Config options](config-startup.md)
 
 ## BEWARE, HERE BE DRAGONS
 
