@@ -5,6 +5,7 @@
 1. [Starting the server](#starting-the-server)
 1. [Keeping it running](#keeping-it-running)
 1. [Configuration](#configuration)
+1. [Shutting down the server](#shutting-down-the-server)
 1. [Wiping the server](#wiping-the-server)
 1. [Admin Commands](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=0)
 
@@ -166,6 +167,29 @@ For example, to set the `PlayerAddExpRate` add this line in the ServerConfig_.in
 [BaseServerConfig]
 IsCanMail=1.000000
 PlayerAddExpRate=1.500000
+```
+
+### Shutting down the server
+
+The server needs to be closed with a single Ctrl-C to initiate a final save before close down (a graceful shutdown).
+
+However, the server also opens a port, `-ShutDownServicePort=5004` in the script above which allows a connection via telnet to shutdown gracefully.
+
+Here is a small script which will programatically drive a telnet connection to gracefullt shutdown the server:
+
+```bash
+#! /usr/bin/expect
+
+set timeout 5
+
+set host localhost
+set port 5004
+
+spawn telnet $host $port
+
+expect "Welcome to server\n\n"
+
+send "shutdown\r"
 ```
 
 ### Wiping the server
