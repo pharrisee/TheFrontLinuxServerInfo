@@ -26,7 +26,7 @@ As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What f
 
 The real reason for this is that the depot for the Linux Server (2334201) is marked as a Windows depot rather than a Linux one, so the `app_update` command doesn't correctly get the files.
 
-It seems there is a way to force `steamcmd` to download the correct files by using this `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.
+It seems there is a way to force `steamcmd` to download the correct files by using `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.
 
 ### Getting the correct files
 
