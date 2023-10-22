@@ -72,7 +72,7 @@ cd $SERVERDIR
 
 # start the server
 ./ProjectWar/Binaries/Linux/TheFrontServer \
-    ProjectWar_Start?DedicatedServer?MaxPlayers=8? \
+    ProjectWar_Start?DedicatedServer?MaxPlayers=8 \
     -server \
     -game -QueueThreshold=8 \
     -ServerName="$SERVERNAME" \
