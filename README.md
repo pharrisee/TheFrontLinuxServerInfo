@@ -173,7 +173,7 @@ PlayerAddExpRate=1.500000
 
 The server needs to be closed with a single Ctrl-C to initiate a final save before close down (a graceful shutdown).
 
-However, the server also opens a port, `-ShutDownServicePort=5004` in the script above, which allows a connection via telnet to shutdown gracefully.
+The server also opens a port, `-ShutDownServicePort=5004` in the script above, which allows a connection via telnet to shutdown gracefully.
 
 Here is a small script which will programatically drive a telnet connection to gracefully shutdown the server:
 
