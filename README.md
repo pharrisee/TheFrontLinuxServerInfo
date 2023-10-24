@@ -25,11 +25,11 @@ I'll help if I can, but don't expect issues and questions answered with any sort
 
 ## Installing
 
-As of 14-Oct-2023 the "The Front Linux Server" Steam download is broken.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
+##### Updated
 
-The real reason for this is that the depot for the Linux Server (2334201) is marked as a Windows depot rather than a Linux one, so the `app_update` command doesn't correctly get the files.
+As of 24-Oct-2023 the "The Front Linux Server" Steam download is ~~broken~~ *fixed*.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
 
-It seems there is a way to force `steamcmd` to download the correct files by using `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.
+~~It seems there is a way to force `steamcmd` to download the correct files by using `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.~~
 
 ### Getting the correct files
 
@@ -41,7 +41,7 @@ Create a shell script called `updateTheFront.sh` with these contents:
 export SERVERDIR=$HOME/TheFrontServer # change this to be where you want the server to live
 
 echo "Downloading The Front Linux Server files..."
-steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir $SERVERDIR +login anonymous +app_update 2334200 +quit
+steamcmd +force_install_dir $SERVERDIR +login anonymous +app_update 2334200 +quit
 
 ```
 
