@@ -27,7 +27,7 @@ I'll help if I can, but don't expect issues and questions answered with any sort
 
 ##### Updated
 
-As of 24-Oct-2023 the "The Front Linux Server" Steam download is ~~broken~~ *fixed*.  What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.
+As of 24-Oct-2023 the "The Front Linux Server" Steam download is ~~broken~~ *fixed*.  ~~What follows is a way to get a Linux server running despite the broken depot.  This script will need to be changed if the depot is ever fixed.~~
 
 ~~It seems there is a way to force `steamcmd` to download the correct files by using `+@sSteamCmdForcePlatformType windows` to tell steam to get the linux files correctly.  Making the update Script not only easier to read but much more efficient.  It will only download when there is an actual update.~~
 
