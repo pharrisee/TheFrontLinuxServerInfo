@@ -15,6 +15,8 @@
 
 This repo is purely for my benefit, the files below work for me, I'm not saying they'll work for you but they might or they might give you ideas... who knows.
 
+These scripts were written and are running on an Ubuntu 22.04 installation, on a VPS.  I haven't myself tried them running in a VM but can't see why it wouldn't work, possibly with some tweaking.
+
 If you use these and your server breaks well such is life, don't copy/paste things you find on t'intarmawebs.
 
 Support for these files is limited, if you don't understand them or how to fix things then there was this thing invented a while ago that sort of allows you to look around the t'intarmawebs and find information, amazing thing.  It's called Google, search for it and use it.
