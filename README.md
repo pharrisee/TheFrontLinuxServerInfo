@@ -56,56 +56,74 @@ Create a shell script called `theFront.sh` with these contents.
 ```bash
 #! /usr/bin/bash
 
-export SAVEDIR=$HOME/TheFrontServerData
-export SERVERDIR=$HOME/TheFrontServer # same as SERVERDIR in the previous script
-export SERVERNAME="Server Name goes here"
-export SERVERTITLE="For old people by old people!"
-# can have multiple admins, separate them by ';'
-# these are steamids
-export ADMINIDS="7xxxxxxxxxxxxxxxx"
-export IPADDRESS=31.x.x.x
-export SERVERPASSWORD="a secret password goes here"
-export SERVERWIPEDATE=2023-10-20
-                    
-mkdir -p $SAVEDIR
+# directories
+export USERDIR=$HOME/TheFront/data
+export SERVERDIR=$HOME/TheFront/server
 
-# change to the server folder specifed above
+mkdir -p $USERDIR
+mkdir -p $SERVERDIR
+
+steamcmd +force_install_dir $SERVERDIR  +login anonymous +app_update 2334200 +quit
+
+# descriptions
+export SERVERNAME="Server name goes here"
+export SERVERTITLE="Server description goes here" # not used currently
+
+# next wipe
+export SERVERRESETDATE=2023-11-24
+
+# server password
+export SERVERPASSWORD="SuperSecretPassword"
+
+# server admins
+export SERVERADMINS="7656xxxxxxxxxxxxx"
+
+# server external ip
+export SERVERIP=31.x.x.x
+
+# ports
+export GAMEPORT=5001
+export BEACONPORT=5002
+export QUERYPORT=5003
+export SHUTDOWNPORT=5004
+
+# pve/pvp
+export FIGHTMODE=1 # 1=pve, 0=pvp
+
+# maxplayers
+export MAXPLAYERS=40
+
+# save how often in seconds
+export SAVEINTERVAL=300
+
+# use ACE anti-cheat?
+export USEANTICHEAT=true
+
+# should chat be censored
+export CENSORCHAT=false
+
+# change to $SERVERDIR
 cd $SERVERDIR
 
-# start the server
 ./ProjectWar/Binaries/Linux/TheFrontServer \
-    ProjectWar_Start?DedicatedServer?MaxPlayers=8 \
-    -server \
-    -game -QueueThreshold=8 \
-    -ServerName="$SERVERNAME" \
-    -ServerAdminAccounts=$ADMINIDS \
+    ProjectWar_Start \
+    -QueueThreshold=$MAXPLAYERS \
+    -ServerName="$SERVERNAME" -ServerAdminAccounts="$SERVERADMINS" \
+    -SteamServerName="$SERVERNAME" -ServerPassword="$SERVERPASSWORD"\
     -log -locallogtimes \
-    -EnableParallelCharacterMovementTickFunction \
-    -EnableParallelCharacterTickFunction \
-    -UseDynamicPhysicsScene \
-    -OutIPAddress=$IPADDRESS \
-    -ServerID=ANY_IDEA \
-    -port=5001 \
-    -BeaconPort=5002 \
-    -QueryPort=5003 \
+    -EnableParallelCharacterMovementTickFunction -EnableParallelCharacterTickFunction \
+    -UseDynamicPhysicsScene -OutIPAddress=$SERVERIP \
+    -ServerID=ANY_IDEA -port=$GAMEPORT \
+    -BeaconPort=$BEACONPORT -QueryPort=$QUERYPORT \
     -Game.PhysicsVehicle=true \
-    -ansimalloc \
-    -Game.MaxFrameRate=35 \
-    -ShutDownServicePort=5004 \
-    -ServerPassword="$SERVERPASSWORD" \
-    -ServerFightModeType=1 \
-    -IsCanSelfDamage=true \
-    -IsCanFriendDamage=true \
-    -fullcrashdumpalways \
-    -MaxQueueSize=2 \
-    -QueueValidTime=60 \
-    -SaveWorldInterval=300 \
-    -GreenHand=true \
-    -SensitiveWords=true \
-    -UseACE=true \
-    -ClearServerTime=$SERVERWIPEDATE \
-    -UserDir=$SAVEDIR \
-    -ServerTitle="$SERVERTITLE" 
+    -Game.MaxFrameRate=35 -ShutDownServicePort=$SHUTDOWNPORT \
+    -ServerFightModeType=$FIGHTMODE \
+    -IsCanSelfDamage=true -IsCanFriendDamage=true \
+    -MaxQueueSize=$MAXPLAYERS -QueueValidTime=60 \
+    -SaveWorldInterval=$SAVEINTERVAL -GreenHand=true \
+    -ClearSeverTime=$SERVERRESETDATE \
+    -SensitiveWords=$CENSORCHAT -UseACE=$USEANTICHEAT \
+    -UserDir=$USERDIR
 
 ```
 #### **Important**
