@@ -136,7 +136,7 @@ If you are running this on a local (at home) computer, then you need to change t
 
 Change your equivalent of this line:
 
-`ProjectWar_Start?DedicatedServer?MaxPlayers=8`
+`ProjectWar_Start`
 
 to something like this:
 
