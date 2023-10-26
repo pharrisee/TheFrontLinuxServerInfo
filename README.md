@@ -141,10 +141,10 @@ Change your equivalent of this line:
 to something like this:
 
 Steam:
-`ProjectWar_Start?DedicatedServer?MaxPlayers=8?udrs=steam` 
+`ProjectWar_Start?udrs=steam` 
 
 Epic:
-`ProjectWar_Start?DedicatedServer?MaxPlayers=8?udrs=eos`
+`ProjectWar_Start?udrs=eos`
 
 
 
