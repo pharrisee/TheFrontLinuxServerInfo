@@ -99,8 +99,8 @@ export SAVEINTERVAL=300
 # use ACE anti-cheat?
 export USEANTICHEAT=true
 
-# should chat be censored
-export ALLOWSENSITIVEWORDS=true
+# should chat be censored? 
+export ALLOWSENSITIVEWORDS=true # false=censored, true=not censored
 
 # change to $SERVERDIR
 cd $SERVERDIR
