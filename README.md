@@ -100,7 +100,7 @@ export SAVEINTERVAL=300
 export USEANTICHEAT=true
 
 # should chat be censored
-export CENSORCHAT=false
+export ALLOWSENSITIVEWORDS=true
 
 # change to $SERVERDIR
 cd $SERVERDIR
@@ -122,7 +122,7 @@ cd $SERVERDIR
     -MaxQueueSize=$MAXPLAYERS -QueueValidTime=60 \
     -SaveWorldInterval=$SAVEINTERVAL -GreenHand=true \
     -ClearSeverTime=$SERVERRESETDATE \
-    -SensitiveWords=$CENSORCHAT -UseACE=$USEANTICHEAT \
+    -SensitiveWords=$ALLOWSENSITIVEWORDS -UseACE=$USEANTICHEAT \
     -UserDir=$USERDIR
 
 ```
