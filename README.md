@@ -106,7 +106,7 @@ export CENSORCHAT=false
 cd $SERVERDIR
 
 ./ProjectWar/Binaries/Linux/TheFrontServer \
-    ProjectWar_Start \
+    ProjectWar_Start?DedicatedServer?MaxPlayers=$MAXPLAYERS \
     -QueueThreshold=$MAXPLAYERS \
     -ServerName="$SERVERNAME" -ServerAdminAccounts="$SERVERADMINS" \
     -SteamServerName="$SERVERNAME" -ServerPassword="$SERVERPASSWORD"\
