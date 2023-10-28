@@ -136,15 +136,15 @@ If you are running this on a local (at home) computer, then you need to change t
 
 Change your equivalent of this line:
 
-`ProjectWar_Start`
+`ProjectWar_Start?DedicatedServer?MaxPlayers=$MAXPLAYERS`
 
 to something like this:
 
 Steam:
-`ProjectWar_Start?udrs=steam` 
+`ProjectWar_Start?DedicatedServer?MaxPlayers=$MAXPLAYERS?udrs=steam` 
 
 Epic:
-`ProjectWar_Start?udrs=eos`
+`ProjectWar_Start?DedicatedServer?MaxPlayers=$MAXPLAYERS?udrs=eos`
 
 
 
