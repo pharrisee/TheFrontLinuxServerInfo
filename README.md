@@ -57,7 +57,7 @@ export SERVERDIR=$HOME/TheFront/server
 mkdir -p $USERDIR
 mkdir -p $SERVERDIR
 
-steamcmd +force_install_dir $SERVERDIR  +login anonymous +app_update 2334200 +quit
+steamcmd +force_install_dir $SERVERDIR +login anonymous +app_update 1007 +app_update 2334200 validate  +quit
 
 # descriptions
 export SERVERNAME="Server name goes here"
