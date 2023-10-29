@@ -27,6 +27,8 @@ Support for these files is limited, if you don't understand them or how to fix t
 
 I'll help if I can, but don't expect issues and questions answered with any sort of timeliness.
 
+---
+
 ## Installing
 
 ### Getting the correct files, initially
@@ -46,6 +48,8 @@ steamcmd +force_install_dir $SERVERDIR +login anonymous +app_update 1007 +app_up
 You must change `$SERVERDIR` to point at where you want the server to live.  The actual place doesn't have to be within the normal structure of a Steam install, I prefer to keep mine separate as the game doesn't care too much where it is.
 
 Run this script, and you should have a folder in the place specified as `$SERVERDIR` containing the game files.
+
+---
 
 ### Starting the server
 
@@ -150,6 +154,8 @@ Epic:
 
 This script will run the server with the info specified in the environment variables at the top of the script.  However it will stop when you log out and that's not much use eh?
 
+---
+
 ### Keeping it running
 
 Create yet another shell script called `startTheFront.sh` with these contents:
@@ -167,6 +173,7 @@ When logging out, use the `Ctrl-B D` command to detach from the tmux session, ra
 
 When you ssh into the server next time, just run `tmux attach` to re-attach to the running session.
 
+---
 
 ### Configuration
 
@@ -186,6 +193,7 @@ For example, to set the `PlayerAddExpRate` add this line in the ServerConfig_.in
 IsCanMail=1.000000
 PlayerAddExpRate=1.500000
 ```
+---
 
 ### Shutting down the server
 
@@ -209,6 +217,8 @@ expect "Welcome to server\n\n"
 
 send "shutdown\r"
 ```
+
+---
 
 ### Wiping the server
 
@@ -234,6 +244,8 @@ You might be able to get away with keeping GuildData.sav if you want to keep squ
 The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
 
 Thanks to ScareCr0w12 for this information on wipes.
+
+---
 
 ### Possible Config Options
 
@@ -362,6 +374,7 @@ GMVehiclePlayerDamageRatio=1
 GMVehicleConstructDamageRatio=1
 GMVehicleDamageRate=1
 ```
+---
 
 ### Server Tags
 
@@ -392,6 +405,8 @@ Use these values to add your tags:
 
 Currently there is a bug whereby it will always show `*1` as the rate regardless of the actual rate you have configured for the various options.
 
+---
+
 ### Admins and Admin Levels
 
 You can add a few different levels of admin (GM) to your server with the command `AddGM STEAM:steamid <level>` and remove them with `RemoveGM STEAM:steamid`, e.g.:
@@ -416,6 +431,8 @@ The levels are defined as follows:
 |23| Able to kick and kill|
 |24| able to spawn items|
 |25| All abilities|
+
+---
 
 ### Console
 
