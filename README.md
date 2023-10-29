@@ -1,4 +1,4 @@
-# Running The Front Linux server
+# Running 'The Front' Linux server
 
 1. [BEWARE, HERE BE DRAGONS](#beware-here-be-dragons)
 1. [Installing](#installing)
