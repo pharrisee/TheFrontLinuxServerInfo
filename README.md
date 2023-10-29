@@ -363,7 +363,7 @@ GMVehicleDamageRate=1
 
 ### Server Tags
 
-When your server is shown in the in-game server browser you can add tags to your server to show how it is configured.
+When your server is shown in the in-game server browser you can add tags to your server display to show how it is configured.
 
 ![image](https://github.com/pharrisee/TheFrontLinuxServerInfo/assets/121816/db351753-2ead-45f7-800e-cf17c20e736c)
 
