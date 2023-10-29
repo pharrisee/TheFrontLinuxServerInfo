@@ -445,4 +445,4 @@ Some keyboard layouts have problems opening the console, Scandinavian and German
 
 ### Logs
 
-Log files for the server can be found at `$SAVEDIR/Saved/Logs`.  They are not currently overly helpful as they are both too detailed and at the same the not containing the info you might require for GM'ing a server.
+Log files for the server can be found at `$SAVEDIR/Saved/Logs`.  They are not currently overly helpful as they are both too detailed and at the same not containing the info you might require for GM'ing a server.
