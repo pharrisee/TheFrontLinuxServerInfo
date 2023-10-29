@@ -359,3 +359,32 @@ GMVehiclePlayerDamageRatio=1
 GMVehicleConstructDamageRatio=1
 GMVehicleDamageRate=1
 ```
+
+### Server Tags
+
+When your server is shown in the in-game server browser you can add tags to your server to show how it is configured.
+
+![image](https://github.com/pharrisee/TheFrontLinuxServerInfo/assets/121816/db351753-2ead-45f7-800e-cf17c20e736c)
+
+This is done by adding a `-ServerTags` option to your start script, e.g.:
+
+```
+-ServerTags=1,2,3,4,8
+```
+
+The above would add tags that show that the server is PVE; has a multiplier for XP; has raised gather rate; you keep inventory on death; and a 60 day wipe.
+
+Use these values to add your tags:
+| Tag | Meaning |
+|---|---|
+|0| PVP |
+|1| PVE|
+|2| EXP Multiplier|
+|3| Gather rate|
+|4| Keep Inventory|
+|5| 45d wipe|
+|6| 15d wipe|
+|7| 30d wipe|
+|8| 60d wipe|
+
+Currently there is a bug whereby it will always show `*1` as the rate regardless of the actual rate you have configured for the various options.
