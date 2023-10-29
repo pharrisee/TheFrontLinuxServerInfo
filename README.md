@@ -10,6 +10,7 @@
 1. [Admin Commands](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=0)
 2. [Possible Config Options](#possible-config-options)
 3. [Server Tags](#server-tags)
+4. [Admins and Admin Levels)(#admins-and-admin-levels)
 
 ## BEWARE, HERE BE DRAGONS
 
@@ -389,3 +390,28 @@ Use these values to add your tags:
 |8| 60d wipe|
 
 Currently there is a bug whereby it will always show `*1` as the rate regardless of the actual rate you have configured for the various options.
+
+### Admins and Admin Levels
+
+You can add a few different levels of admin (GM) to your server with the command `AddGM STEAM:steamid <level>` and remove them with `RemoveGM STEAM:steamid`, e.g.:
+
+```ini
+AddGM STEAM:7656xxxxxxxxxxxxx 25
+```
+
+or 
+
+```ini
+RemoveGM STEAM:7656xxxxxxxxxxxxx
+```
+
+The levels are defined as follows:
+
+|Level|Meaning|
+|---|---|
+|20| Priority queue|
+|21| See GM Console, Able to teleport|
+|22| Able to see player list in full|
+|23| Able to kick and kill|
+|24| able to spawn items|
+|25| All abilities|
