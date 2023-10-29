@@ -12,6 +12,7 @@
 3. [Server Tags](#server-tags)
 4. [Admins and Admin Levels](#admins-and-admin-levels)
 1. [Console](#console)
+1. [Logs](#logs)
 
 ## BEWARE, HERE BE DRAGONS
 
@@ -439,3 +440,9 @@ The levels are defined as follows:
 The console can be opened by pressing the backtick key `` ` ``.  This opens a very small single line console at the bottom of the screen.  Pressing the backtick twice opens a full console.
 
 Some keyboard layouts have problems opening the console, Scandinavian and German layouts are known to cause issues and probably others as well.  One 'fix' for this is to change keyboard layout to a UK layout whilst in game (temporarily) and open the console whilst that layout is in force.
+
+---
+
+### Logs
+
+Log files for the server can be found at `$SAVEDIR/Saved/Logs`.  They are not currently overly helpful as they are both too detailed and at the same the not containing the info you might require for GM'ing a server.
