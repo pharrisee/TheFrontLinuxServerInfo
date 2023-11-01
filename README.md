@@ -413,7 +413,11 @@ Currently there is a bug whereby it will always show `*1` as the rate regardless
 You can add a few different levels of admin (GM) to your server with the command `AddGM STEAM:steamid <level>` and remove them with `RemoveGM STEAM:steamid`, e.g.:
 
 ```ini
-AddGM STEAM:7656xxxxxxxxxxxxx 25
+AddGM STEAM:7656xxxxxxxxxxxxx 25 // for steam
+
+or
+
+AddGM EOS:xxxxxxxxx 25 // for epic
 ```
 
 or 
