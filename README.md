@@ -450,3 +450,15 @@ Some keyboard layouts have problems opening the console, Scandinavian and German
 ### Logs
 
 Log files for the server can be found at `$SAVEDIR/Saved/Logs`.  They are not currently overly helpful as they are both too detailed and at the same not containing the info you might require for GM'ing a server.
+
+#### Log Rotation
+
+The game creates backup copies of logs in `$SAVEDIR/Saved/Logs` with the pattern `ProjectWar-backup-<a date>.log`, these can get quite large depending on server load and usage.  There have been reports of servers crashing if the disk fills with these logs.
+
+The logs should rotate and the rotation issue has been raised with the developers.  The automatic rotation of the logs is not currently in place. Let's do something about that eh?
+
+```bash
+ls -lt $SAVEDIR/Saved/Logs | tail -n +6 | xargs rm --
+```
+
+This will irreversibly remove old logs files, leaving 5 days worth behind.
