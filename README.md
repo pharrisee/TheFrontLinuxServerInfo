@@ -457,8 +457,32 @@ The game creates backup copies of logs in `$SAVEDIR/Saved/Logs` with the pattern
 
 The logs should rotate and the rotation issue has been raised with the developers.  The automatic rotation of the logs is not currently in place. Let's do something about that eh?
 
+Create a script with these contents:
+
 ```bash
-ls -lt $SAVEDIR/Saved/Logs | tail -n +6 | xargs rm --
+#! /usr/bin/bash
+export SAVEDIR=$HOME/TheFront/data # should be the same as the above $SAVEDIR
+
+export pattern=$SAVEDIR/Saved/Logs/*backup*.log
+
+function confirm {
+    while true; do
+        read -p "$1" yn
+        case $yn in
+            [Yy] ) return 0;;
+            [Nn] ) return 1;;
+            * ) echo "Please answer Y or N";;
+        esac
+    done
+}
+if confirm "Really delete all older logs? Y/N :"; then
+        export count=`ls -l $pattern | wc -l`
+        echo $count
+        if [[ $count -gt 6 ]]; then
+                echo "removing old files"
+                #ls -lt $pattern | tail -n +6 | xargs rm --
+        fi
+fi
 ```
 
 This will irreversibly remove old logs files, leaving 5 days worth behind.
