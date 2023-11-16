@@ -198,7 +198,7 @@ PlayerAddExpRate=1.500000
 
 ### Shutting down the server
 
-To shutdown the server you will need to reattach to the terminal running ivia tmux by doing:
+To shutdown the server you will need to reattach to the terminal running via tmux by doing:
 
 ```bash
 tmux attach
