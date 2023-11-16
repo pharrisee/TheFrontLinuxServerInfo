@@ -198,7 +198,13 @@ PlayerAddExpRate=1.500000
 
 ### Shutting down the server
 
-The server needs to be closed with a single Ctrl-C to initiate a final save before close down (a graceful shutdown).
+To shutdown the server you will need to reattach to the terminal running ivia tmux by doing:
+
+```bash
+tmux attach
+```
+
+This will allow you to close with a single Ctrl-C to initiate a final save before close down (a graceful shutdown).
 
 The server also opens a port, `-ShutDownServicePort=5004` in the script above, which allows a connection via telnet to shutdown gracefully.
 
