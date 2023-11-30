@@ -194,6 +194,9 @@ For example, to set the `PlayerAddExpRate` add this line in the ServerConfig_.in
 IsCanMail=1.000000
 PlayerAddExpRate=1.500000
 ```
+
+Running admin commands in game will also update this file, if the value being set is different to the current value.  For a list of known admin commands check out (gjelsoes list)[https://github.com/gjelsoe/TheFrontSettings/wiki/Admin-Commands]
+
 ---
 
 ### Shutting down the server
