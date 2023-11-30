@@ -42,7 +42,7 @@ Create a shell script called `updateTheFront.sh` with these contents:
 export SERVERDIR=$HOME/TheFront/server # change this to be where you want the server to live
 
 echo "Downloading The Front Linux Server files..."
-steamcmd +force_install_dir $SERVERDIR +login anonymous +app_update 1007 +app_update 2334200 +validate  +quit
+steamcmd +force_install_dir $SERVERDIR +login anonymous +app_update 1007 validate +app_update 2334200 validate  +quit
 
 ```
 
