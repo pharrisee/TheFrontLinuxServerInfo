@@ -8,7 +8,6 @@
 1. [Shutting down the server](#shutting-down-the-server)
 1. [Wiping the server](#wiping-the-server)
 1. [Admin Commands](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=0)
-2. [Possible Config Options](#possible-config-options)
 3. [Server Tags](#server-tags)
 4. [Admins and Admin Levels](#admins-and-admin-levels)
 1. [Console](#console)
