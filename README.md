@@ -135,6 +135,8 @@ If you don't require a password on your server then you **MUST** completely remo
 
 #### Running on a network using NAT (P2P)
 
+This option is crossplatform and works with both Windows and Linux dedicated servers.
+
 If you are running this on a local (at home) computer, then you need to change the start script slightly.
 
 Change your equivalent of this line:
