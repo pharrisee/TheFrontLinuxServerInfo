@@ -201,6 +201,11 @@ PlayerAddExpRate=1.500000
 
 Running admin commands in game will also update this file, if the value being set is different to the current value.  For a list of known admin commands check out [gjelsoes list](https://github.com/gjelsoe/TheFrontSettings/wiki/Admin-Commands).
 
+
+#### Possible Config Options
+
+A list of config items is available on [gjelsoe's repo](https://github.com/gjelsoe/TheFrontSettings/wiki/Server-Settings)
+
 ---
 
 ### Shutting down the server
@@ -258,12 +263,6 @@ You might be able to get away with keeping GuildData.sav if you want to keep squ
 The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
 
 Thanks to ScareCr0w12 for this information on wipes.
-
----
-
-### Possible Config Options
-
-A list of config items is available on [gjelsoe's repo](https://github.com/gjelsoe/TheFrontSettings/wiki/Server-Settings)
 
 ---
 
