@@ -18,6 +18,8 @@
 
 **PLEASE READ THIS BIT CAREFULLY**
 
+**This repo is ostensibly for Linux but a lot of the info in here is OS agnsostic, they work on Windows as well.**
+
 This repo is purely for my benefit, the files below work for me, I'm not saying they'll work for you but they might or they might give you ideas... who knows.
 
 These scripts were written and are running on an Ubuntu 22.04 Server installation, on a VPS.  I haven't myself tried them running in a VM but can't see why it wouldn't work, possibly with some tweaking.
