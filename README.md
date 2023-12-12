@@ -181,7 +181,7 @@ When you ssh into the server next time, just run `tmux attach` to re-attach to t
 
 ### Configuration
 
-Using $SERVERDIR above as a base the configuration file `ServerConfig_.ini` lives in $SERVERDIR/TheFrontManager/ServerConfig_.ini.  If $SERVERDIR/TheFrontManager doesn't exist then create that folder and run this command to create the file required:
+Using `$SERVERDIR` above as a base the configuration file `ServerConfig_.ini` lives in `$SERVERDIR/TheFrontManager/ServerConfig_.ini`.  If `$SERVERDIR/TheFrontManager` doesn't exist then create that folder and run this command to create the file required:
 
 ```bash
 cd $SERVERDIR/TheFrontManager
