@@ -198,7 +198,7 @@ IsCanMail=1.000000
 PlayerAddExpRate=1.500000
 ```
 
-Running admin commands in game will also update this file, if the value being set is different to the current value.  For a list of known admin commands check out [gjelsoes list](https://github.com/gjelsoe/TheFrontSettings/wiki/Admin-Commands).
+Running  commands in game will also update this file, if the value being set is different to the current value.  For a list of known  commands check out [gjelsoes list](https://github.com/gjelsoe/TheFrontSettings/wiki/-Commands).
 
 
 #### Possible Config Options
@@ -259,7 +259,7 @@ You can leave the logs, or move them out of the way, if you want a record of the
 
 You might be able to get away with keeping GuildData.sav if you want to keep squads, not tested thoroughly.
 
-The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on admins and bans.  You can leave this alone if you want to keep the bans in place.
+The file `$SAVEDIR/Saved/GameStates/Accounts/GM.csv` contains info on s and bans.  You can leave this alone if you want to keep the bans in place.
 
 Thanks to ScareCr0w12 for this information on wipes.
 
@@ -297,6 +297,8 @@ Currently there is a bug whereby it will always show `*1` as the rate regardless
 ---
 
 ### Admins and Admin Levels
+
+In the start script, or in the config file, use a plain STEAM64ID.
 
 You can add a few different levels of admin (GM) to your server with the command `AddGM STEAM:steamid <level>` and remove them with `RemoveGM STEAM:steamid`, e.g.:
 
